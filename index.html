@@ -1,44 +1,91 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh_CN">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>康文昌的在线HTML 教学小工具</title>
-    <style>  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="description" content="惠大人静态个人导航页，个人主页。" />
+    <meta name="keywords" content="惠大人,主页，静态" />
+    <meta name="robots" content="none" />
+    <title>惠大人人的第一个静态网站</title>
+    <style>
       body {
+        background-image: url(background.png);
         margin: 0;
+        height: 100vh;
+      }
+      /* * {
+           border: 1px solid black;
+         } */
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: rgba(250, 249, 249, 0);
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .flex2 {
+        flex: 2;
+      }
+      .center {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .box:hover {
+        box-shadow: 0 16px 32px 0 rgba(48, 55, 66, 0.15); /* 鼠标悬浮时盒子出现的阴影 */
+        transform: translate(0, -10px); /* 鼠标悬浮时盒子上移10px */
       }
     </style>
   </head>
-  <body>
-    <div style="
-      background-color: #f1f1f1;
-      text-align: center;
-      padding: 40px;
-    ">
-      <img src='https://kangwenchang.com/logo.png' alt="康文昌" width="80px" height="80px">
+  <body class="flex column">
+    <div style="padding-top: 350px" class="baise center">
+      <img
+        style="border-radius: 50%; overflow: hidden; width: 100px"
+        src="logo.jpg"
+        alt="头像"
+      />
+      <h1 style="color: aliceblue">惠大人~</h1>
     </div>
-    <div style="
-      max-width: 700px;
-      margin: 30px auto;
-      padding: 15px
-      line-height: 1.7;
-      color: red;
-    ">
-      <p>我的网站</p>
-      <p>我的网站</p>
-      <p>我的网站</p>
-      <p>我的网站</p>
-      <p>我的网站</p>
-    </div>
-    <div style="
-      background-color: #f1f1f1;
-      text-align: center;
-      padding: 40px;
-      font-size: 12px;
-    ">
-    <p>我的网站</p>
-    <a href='https://kangwenchang.com/'>友情链接</a>
+    <div style="height: 50px" class="flex baise">
+      <div style="height: 50px" class="flex baise flex2 center"></div>
+      <div style="height: 50px" class="flex baise flex1 center">
+        <a href="404.html"
+          ><img
+            src="wechat-logo-1.svg"
+            alt="WeChat"
+            height="50px"
+            title="我的微信"
+        /></a>
+      </div>
+      <div style="height: 50px" class="flex baise flex1 center">
+        <a href="404.html"
+          ><img src="tencent-qq.svg" alt="QQ" height="50px" title="我的QQ"
+        /></a>
+      </div>
+      <div style="height: 50px" class="flex baise flex1 center">
+        <a href="404.html"
+          ><img src="mail-ios.svg" alt="Mail" height="50px" title="我的邮箱"
+        /></a>
+      </div>
+      <div style="height: 50px" class="flex baise flex1 center">
+        <a href="https://space.bilibili.com/162939828"
+          ><img
+            src="bilibili-logo-blue.svg"
+            alt="bilibili"
+            height="50px"
+            title="我的B站"
+        /></a>
+      </div>
+      <div style="height: 50px" class="flex baise flex2 center"></div>
     </div>
   </body>
 </html>

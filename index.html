@@ -17,14 +17,24 @@
         margin: 0;
         height: 100vh;
       }
+      div {
+        margin: 2px;
+        display: flex;
+      }
       /* * {
-           border: 1px solid black;
-         } */
+        border: 1px solid black;
+      } */
       .flex {
         display: flex;
       }
-      .baise {
+      .white {
         background-color: rgba(250, 249, 249, 0);
+      }
+      .red {
+        background-color: rgb(255, 0, 0, 0);
+      }
+      .yellow {
+        background-color: rgb(255, 255, 0, 0);
       }
       .flex1 {
         flex: 1;
@@ -38,50 +48,62 @@
       .center {
         justify-content: center;
         align-items: center;
-        text-align: center;
       }
     </style>
   </head>
-  <body class="flex column">
-    <div style="padding-top: 350px" class="baise center">
+  <body class="flex column center">
+    <div class="red center">
       <img
         style="border-radius: 50%; overflow: hidden; width: 100px"
         src="logo.jpg"
         alt="头像"
+        draggable="true"
       />
+    </div>
+    <div>
       <h1 style="color: aliceblue">惠大人~</h1>
     </div>
-    <div style="height: 50px" class="flex baise">
-      <div style="height: 50px" class="flex baise flex2 center"></div>
-      <div style="height: 50px" class="flex baise flex1 center">
+    <div style="justify-content: space-around; width: 60%" class="flex red">
+      <div class="flex yellow flex1 center">
         <a href="404.html"
           ><img
             src="wechat-logo-1.svg"
             alt="WeChat"
             height="50px"
             title="我的微信"
+            draggable="true"
         /></a>
       </div>
-      <div style="height: 50px" class="flex baise flex1 center">
+      <div class="flex yellow flex1 center">
         <a href="404.html"
-          ><img src="tencent-qq.svg" alt="QQ" height="50px" title="我的QQ"
+          ><img
+            src="tencent-qq.svg"
+            alt="QQ"
+            height="50px"
+            title="我的QQ"
+            draggable="true"
         /></a>
       </div>
-      <div style="height: 50px" class="flex baise flex1 center">
+      <div class="flex yellow flex1 center">
         <a href="404.html"
-          ><img src="mail-ios.svg" alt="Mail" height="50px" title="我的邮箱"
+          ><img
+            src="mail-ios.svg"
+            alt="Mail"
+            height="50px"
+            title="我的邮箱"
+            draggable="true"
         /></a>
       </div>
-      <div style="height: 50px" class="flex baise flex1 center">
+      <div class="flex yellow flex1 center">
         <a href="https://space.bilibili.com/162939828"
           ><img
             src="bilibili-logo-blue.svg"
             alt="bilibili"
             height="50px"
             title="我的B站"
+            draggable="true"
         /></a>
       </div>
-      <div style="height: 50px" class="flex baise flex2 center"></div>
     </div>
   </body>
 </html>

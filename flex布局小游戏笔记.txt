@@ -1,0 +1,43 @@
+flex布局小游戏：
+    justify-content:决定同一行flex在x轴的排列
+        flex-start(default):从x轴头部开始
+        center:从x轴中间开始
+        flex-end:从x轴尾部开始
+        space-around:第一个flex和最后一个flex在靠近上一级flex边缘处各留半个空位，然后均匀分布
+        space-between:边缘不留空位，均匀分布
+        spcae-evenly:均匀分布，包括边缘空位
+    align-items:决定同一行flex在y轴的分布
+        stretch(default):拉伸flex到撑满整个y轴（不是很准确，实际是被适应拉伸以容器）
+        center:从y轴中间开始
+        flex-start:从y轴头部开始
+        flex-end:从y轴尾部开始
+        baseline:让同行flex的文字底部对齐
+    flex-direction:决定flex内的下级flex排列方向
+        row(default):按行排列
+        row-reverse:按行取反排列
+        column:按列排列，此时应该理解为x，y轴对调
+        column-reverse:按列取反排列
+    order:决定flex在同一级的次序
+        0(default)
+        其他数字
+    align-self:决定单个flex在y轴上的排列
+        auto(default):继承了它的父容器的align-items属性,如果没有父容器则为 "stretch"
+        center:排列在y轴中间
+        flex-start(default):排列在y轴头部
+        flex-end:排列在y轴尾部
+        stretch:拉伸填满整个y轴（不是很准确，实际是被适应拉伸以容器）
+    flex-wrap:决定同行flex是否换行
+        no-wrap(default):不换行
+        wrap:换行
+        wrap-reverse:取反后换行
+    align-content:决定同一列元素在y轴的排列
+        stretch(default)被拉伸以适应容器
+        center:从y轴中间开始
+        flex-start:从y轴头部开始
+        flex-end:从y轴尾部开始
+        space-around:第一个flex和最后一个flex在靠近上一级flex边缘处各留半个空位，然后均匀分布
+        space-between:边缘不留空位，均匀分布
+    备注：x，y轴更准确的说是主轴和交叉轴，flex-direction默认row可以理解为当前的x轴与行重合，
+        此时行方向为主轴，y轴与列重合，此时列方向与交叉轴重合，如果flex-direction设置为column,
+        实际意思是主轴与交叉轴互换，此时x，y轴的方向以及行和列的方向也应对应理解，也即交换方向
+
